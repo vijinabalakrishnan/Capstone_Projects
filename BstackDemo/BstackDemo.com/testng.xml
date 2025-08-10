@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BstackDemo">
+    <test name="BstackDemo_Test">
+        <classes>
+            <class name="test.java.tests.LoginTests"/>
+            <class name="test.java.tests.AddToCartTests"/>            
+            <class name="test.java.tests.CheckoutTests"/>
+        </classes>
+    </test>
+</suite>

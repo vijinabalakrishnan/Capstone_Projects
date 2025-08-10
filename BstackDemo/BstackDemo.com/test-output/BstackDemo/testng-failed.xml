@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BstackDemo]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Page_Title_Test(failed)">
+    <classes>
+      <class name="test.java.tests.CheckoutTests">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="placeOrderWithValidDetails"/>
+          <include name="tearDownExtent"/>
+          <include name="setupExtent"/>
+          <include name="setupDriver"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- test.java.tests.CheckoutTests -->
+      <class name="test.java.tests.AddToCartTests">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="tearDownExtent"/>
+          <include name="login"/>
+          <include name="addSingleItemToCart"/>
+          <include name="setupExtent"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- test.java.tests.AddToCartTests -->
+    </classes>
+  </test> <!-- Page_Title_Test(failed) -->
+</suite> <!-- Failed suite [BstackDemo] -->
