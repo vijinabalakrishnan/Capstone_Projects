@@ -4,6 +4,8 @@
   <test thread-count="5" name="OrangeHRM_Test">
     <classes>
       <class name="test.java.tests.LoginTests"/>
+      <class name="test.java.tests.DashboardTests"/>
+      <class name="test.java.tests.SearchUserTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
