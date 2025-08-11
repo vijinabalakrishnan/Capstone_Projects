@@ -1,105 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-11T22:11:00 IST" name="Suite" finished-at="2025-08-11T22:12:13 IST" duration-ms="73195">
+  <suite started-at="2025-08-11T23:15:43 IST" name="Suite" finished-at="2025-08-11T23:17:49 IST" duration-ms="126148">
     <groups>
     </groups>
-    <test started-at="2025-08-11T22:11:00 IST" name="OrangeHRM_Test" finished-at="2025-08-11T22:12:13 IST" duration-ms="73195">
+    <test started-at="2025-08-11T23:15:43 IST" name="OrangeHRM_Test" finished-at="2025-08-11T23:17:49 IST" duration-ms="126148">
       <class name="test.java.tests.DashboardTests">
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.DashboardTests@3eb25e1a]" started-at="2025-08-11T22:11:13 IST" name="setupDriver" finished-at="2025-08-11T22:11:19 IST" duration-ms="5605" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.DashboardTests@3eb25e1a]" started-at="2025-08-11T23:16:50 IST" name="setupDriver" finished-at="2025-08-11T23:16:55 IST" duration-ms="4848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.DashboardTests@3eb25e1a]" started-at="2025-08-11T22:11:19 IST" name="login" finished-at="2025-08-11T22:11:20 IST" duration-ms="768" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.DashboardTests@3eb25e1a]" started-at="2025-08-11T23:16:55 IST" name="login" finished-at="2025-08-11T23:16:55 IST" duration-ms="721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="checkLeftMenuItemsCount()[pri:0, instance:test.java.tests.DashboardTests@3eb25e1a]" started-at="2025-08-11T22:11:20 IST" name="checkLeftMenuItemsCount" finished-at="2025-08-11T22:11:24 IST" duration-ms="4087" status="PASS">
+        <test-method signature="checkLeftMenuItemsCount()[pri:0, instance:test.java.tests.DashboardTests@3eb25e1a]" started-at="2025-08-11T23:16:55 IST" name="checkLeftMenuItemsCount" finished-at="2025-08-11T23:17:00 IST" duration-ms="4137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLeftMenuItemsCount -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.DashboardTests@3eb25e1a]" started-at="2025-08-11T22:11:24 IST" name="quitDriver" finished-at="2025-08-11T22:11:24 IST" duration-ms="662" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.DashboardTests@3eb25e1a]" started-at="2025-08-11T23:17:00 IST" name="quitDriver" finished-at="2025-08-11T23:17:00 IST" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- test.java.tests.DashboardTests -->
       <class name="test.java.tests.SearchUserTests">
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:24 IST" name="setupDriver" finished-at="2025-08-11T22:11:29 IST" duration-ms="4911" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:00 IST" name="setupDriver" finished-at="2025-08-11T23:17:05 IST" duration-ms="4647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:29 IST" name="login" finished-at="2025-08-11T22:11:30 IST" duration-ms="743" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:05 IST" name="login" finished-at="2025-08-11T23:17:06 IST" duration-ms="761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="searchByUserName()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:30 IST" name="searchByUserName" finished-at="2025-08-11T22:11:36 IST" duration-ms="6061" status="PASS">
+        <test-method signature="searchByUserName()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:06 IST" name="searchByUserName" finished-at="2025-08-11T23:17:12 IST" duration-ms="6166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByUserName -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:36 IST" name="quitDriver" finished-at="2025-08-11T22:11:37 IST" duration-ms="669" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:12 IST" name="quitDriver" finished-at="2025-08-11T23:17:13 IST" duration-ms="680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:37 IST" name="setupDriver" finished-at="2025-08-11T22:11:41 IST" duration-ms="4605" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:13 IST" name="setupDriver" finished-at="2025-08-11T23:17:17 IST" duration-ms="4657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:41 IST" name="login" finished-at="2025-08-11T22:11:42 IST" duration-ms="725" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:17 IST" name="login" finished-at="2025-08-11T23:17:18 IST" duration-ms="756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="searchByUserRoleDropdown()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:42 IST" name="searchByUserRoleDropdown" finished-at="2025-08-11T22:11:48 IST" duration-ms="5891" status="PASS">
+        <test-method signature="searchByUserRoleDropdown()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:18 IST" name="searchByUserRoleDropdown" finished-at="2025-08-11T23:17:24 IST" duration-ms="6402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByUserRoleDropdown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:48 IST" name="quitDriver" finished-at="2025-08-11T22:11:49 IST" duration-ms="706" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:24 IST" name="quitDriver" finished-at="2025-08-11T23:17:25 IST" duration-ms="679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:49 IST" name="setupDriver" finished-at="2025-08-11T22:11:53 IST" duration-ms="4734" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:25 IST" name="setupDriver" finished-at="2025-08-11T23:17:30 IST" duration-ms="4630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:53 IST" name="login" finished-at="2025-08-11T22:11:54 IST" duration-ms="744" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:30 IST" name="login" finished-at="2025-08-11T23:17:30 IST" duration-ms="722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="searchByUserStatusDropdown()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:11:54 IST" name="searchByUserStatusDropdown" finished-at="2025-08-11T22:12:00 IST" duration-ms="5790" status="PASS">
+        <test-method signature="searchByUserStatusDropdown()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:30 IST" name="searchByUserStatusDropdown" finished-at="2025-08-11T23:17:37 IST" duration-ms="6349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByUserStatusDropdown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:12:00 IST" name="quitDriver" finished-at="2025-08-11T22:12:01 IST" duration-ms="642" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:37 IST" name="quitDriver" finished-at="2025-08-11T23:17:37 IST" duration-ms="653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:12:01 IST" name="setupDriver" finished-at="2025-08-11T22:12:06 IST" duration-ms="5062" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:37 IST" name="setupDriver" finished-at="2025-08-11T23:17:42 IST" duration-ms="4615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:12:06 IST" name="login" finished-at="2025-08-11T22:12:06 IST" duration-ms="733" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:42 IST" name="login" finished-at="2025-08-11T23:17:43 IST" duration-ms="776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="searchByUserStatusDropdownDisabled()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:12:06 IST" name="searchByUserStatusDropdownDisabled" finished-at="2025-08-11T22:12:12 IST" duration-ms="5969" status="PASS">
+        <test-method signature="searchByUserStatusDropdownDisabled()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:43 IST" name="searchByUserStatusDropdownDisabled" finished-at="2025-08-11T23:17:49 IST" duration-ms="5900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByUserStatusDropdownDisabled -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T22:12:12 IST" name="quitDriver" finished-at="2025-08-11T22:12:13 IST" duration-ms="656" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.SearchUserTests@3d285d7e]" started-at="2025-08-11T23:17:49 IST" name="quitDriver" finished-at="2025-08-11T23:17:49 IST" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- test.java.tests.SearchUserTests -->
       <class name="test.java.tests.LoginTests">
-        <test-method is-config="true" signature="setupExtent()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T22:10:59 IST" name="setupExtent" finished-at="2025-08-11T22:11:00 IST" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:15:43 IST" name="setupExtent" finished-at="2025-08-11T23:15:43 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtent -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T22:11:01 IST" name="setupDriver" finished-at="2025-08-11T22:11:07 IST" duration-ms="6112" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:15:44 IST" name="setupDriver" finished-at="2025-08-11T23:15:50 IST" duration-ms="5818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T22:11:07 IST" name="loginTest" data-provider="loginData" finished-at="2025-08-11T22:11:12 IST" duration-ms="5730" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:15:50 IST" name="loginTest" data-provider="loginData" finished-at="2025-08-11T23:15:56 IST" duration-ms="5902" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,11 +115,107 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T22:11:12 IST" name="quitDriver" finished-at="2025-08-11T22:11:13 IST" duration-ms="777" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:15:56 IST" name="quitDriver" finished-at="2025-08-11T23:15:56 IST" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="tearDownExtent()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T22:12:13 IST" name="tearDownExtent" finished-at="2025-08-11T22:12:13 IST" duration-ms="283" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:15:56 IST" name="setupDriver" finished-at="2025-08-11T23:16:02 IST" duration-ms="5181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:02 IST" name="loginTest" data-provider="loginData" finished-at="2025-08-11T23:16:09 IST" duration-ms="7094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:09 IST" name="quitDriver" finished-at="2025-08-11T23:16:10 IST" duration-ms="1455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:10 IST" name="setupDriver" finished-at="2025-08-11T23:16:15 IST" duration-ms="4838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:15 IST" name="loginTest" data-provider="loginData" finished-at="2025-08-11T23:16:22 IST" duration-ms="6805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:22 IST" name="quitDriver" finished-at="2025-08-11T23:16:23 IST" duration-ms="1575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:23 IST" name="setupDriver" finished-at="2025-08-11T23:16:28 IST" duration-ms="5024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:28 IST" name="loginTest" data-provider="loginData" finished-at="2025-08-11T23:16:35 IST" duration-ms="6767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:35 IST" name="quitDriver" finished-at="2025-08-11T23:16:37 IST" duration-ms="1582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:37 IST" name="setupDriver" finished-at="2025-08-11T23:16:41 IST" duration-ms="4685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:41 IST" name="loginTest" data-provider="loginData" finished-at="2025-08-11T23:16:48 IST" duration-ms="6922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:16:48 IST" name="quitDriver" finished-at="2025-08-11T23:16:50 IST" duration-ms="1494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="tearDownExtent()[pri:0, instance:test.java.tests.LoginTests@217ed35e]" started-at="2025-08-11T23:17:49 IST" name="tearDownExtent" finished-at="2025-08-11T23:17:50 IST" duration-ms="300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownExtent -->

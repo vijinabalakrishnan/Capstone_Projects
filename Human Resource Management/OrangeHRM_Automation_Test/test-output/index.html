@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,7 +108,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.java.tests.LoginTests" class="method navigator-link" hash-for-method="loginTest(user1, pass1)">loginTest(user1, pass1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.java.tests.LoginTests" class="method navigator-link" hash-for-method="loginTest(admin, wrong123)">loginTest(admin, wrong123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.java.tests.LoginTests" class="method navigator-link" hash-for-method="loginTest(test, 12345.0)">loginTest(test, 12345.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.java.tests.LoginTests" class="method navigator-link" hash-for-method="loginTest(Admin, admin123)">loginTest(Admin, admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.java.tests.LoginTests" class="method navigator-link" hash-for-method="loginTest(admin123, Admin)">loginTest(admin123, Admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,10 +171,42 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="loginTest(user1, pass1)">
+                  </a> <!-- loginTest(user1, pass1) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(user1,pass1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(admin, wrong123)">
+                  </a> <!-- loginTest(admin, wrong123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(admin,wrong123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(test, 12345.0)">
+                  </a> <!-- loginTest(test, 12345.0) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(test,12345.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginTest(Admin, admin123)">
                   </a> <!-- loginTest(Admin, admin123) -->
                   <span class="method-name">loginTest</span>
                   <span class="parameters">(Admin,admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(admin123, Admin)">
+                  </a> <!-- loginTest(admin123, Admin) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(admin123,Admin)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -264,36 +316,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchByUserName')
-data.setCell(0, 2, 'test.java.tests.SearchUserTests')
-data.setCell(0, 3, 6061);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'test.java.tests.LoginTests')
+data.setCell(0, 3, 7094);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchByUserStatusDropdownDisabled')
-data.setCell(1, 2, 'test.java.tests.SearchUserTests')
-data.setCell(1, 3, 5969);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'test.java.tests.LoginTests')
+data.setCell(1, 3, 6922);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'searchByUserRoleDropdown')
-data.setCell(2, 2, 'test.java.tests.SearchUserTests')
-data.setCell(2, 3, 5891);
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'test.java.tests.LoginTests')
+data.setCell(2, 3, 6805);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'searchByUserStatusDropdown')
-data.setCell(3, 2, 'test.java.tests.SearchUserTests')
-data.setCell(3, 3, 5790);
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'test.java.tests.LoginTests')
+data.setCell(3, 3, 6767);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginTest')
-data.setCell(4, 2, 'test.java.tests.LoginTests')
-data.setCell(4, 3, 5730);
+data.setCell(4, 1, 'searchByUserRoleDropdown')
+data.setCell(4, 2, 'test.java.tests.SearchUserTests')
+data.setCell(4, 3, 6402);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkLeftMenuItemsCount')
-data.setCell(5, 2, 'test.java.tests.DashboardTests')
-data.setCell(5, 3, 4087);
+data.setCell(5, 1, 'searchByUserStatusDropdown')
+data.setCell(5, 2, 'test.java.tests.SearchUserTests')
+data.setCell(5, 3, 6349);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'searchByUserName')
+data.setCell(6, 2, 'test.java.tests.SearchUserTests')
+data.setCell(6, 3, 6166);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginTest')
+data.setCell(7, 2, 'test.java.tests.LoginTests')
+data.setCell(7, 3, 5902);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'searchByUserStatusDropdownDisabled')
+data.setCell(8, 2, 'test.java.tests.SearchUserTests')
+data.setCell(8, 3, 5900);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkLeftMenuItemsCount')
+data.setCell(9, 2, 'test.java.tests.DashboardTests')
+data.setCell(9, 3, 4137);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -344,108 +412,156 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">1050 ms</span>
+                <span class="method-start">1165 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(Admin, admin123)</span>
-                <span class="method-start">7163 ms</span>
+                <span class="method-start">6984 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">12898 ms</span>
+                <span class="method-start">12893 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">13578 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(admin, wrong123)</span>
+                <span class="method-start">18759 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">25854 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">27310 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(user1, pass1)</span>
+                <span class="method-start">32148 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">38955 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">40531 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(test, 12345.0)</span>
+                <span class="method-start">45556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">52324 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">53907 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(admin123, Admin)</span>
+                <span class="method-start">58592 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">65515 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.java.tests.DashboardTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">13678 ms</span>
+                <span class="method-start">67014 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">19283 ms</span>
+                <span class="method-start">71863 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkLeftMenuItemsCount</span>
-                <span class="method-start">20051 ms</span>
+                <span class="method-start">72585 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">24139 ms</span>
+                <span class="method-start">76724 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.java.tests.SearchUserTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">24804 ms</span>
+                <span class="method-start">77383 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">29715 ms</span>
+                <span class="method-start">82030 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchByUserName</span>
-                <span class="method-start">30458 ms</span>
+                <span class="method-start">82791 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">36520 ms</span>
+                <span class="method-start">88958 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">37190 ms</span>
+                <span class="method-start">89639 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">41795 ms</span>
+                <span class="method-start">94296 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchByUserRoleDropdown</span>
-                <span class="method-start">42520 ms</span>
+                <span class="method-start">95053 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">48413 ms</span>
+                <span class="method-start">101456 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">49120 ms</span>
+                <span class="method-start">102137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">53854 ms</span>
+                <span class="method-start">106767 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchByUserStatusDropdown</span>
-                <span class="method-start">54598 ms</span>
+                <span class="method-start">107489 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">60389 ms</span>
+                <span class="method-start">113838 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">61033 ms</span>
+                <span class="method-start">114492 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">66096 ms</span>
+                <span class="method-start">119107 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchByUserStatusDropdownDisabled</span>
-                <span class="method-start">66829 ms</span>
+                <span class="method-start">119883 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">72799 ms</span>
+                <span class="method-start">125785 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.java.tests.LoginTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownExtent</span>
-                <span class="method-start">73491 ms</span>
+                <span class="method-start">126480 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
