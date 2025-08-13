@@ -67,7 +67,7 @@ public class RestAPITesting {
         token = loginResponse.jsonPath().getString("token");
     }
     
-    //@Test
+    @Test(priority = 1)
     public void testGetUserProfile() {
         given()
                 .header("Authorization", "Bearer " + token)
@@ -78,7 +78,7 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 200 OK"));
     }
     
-    //@Test
+    @Test(priority = 2)
     public void testUpdateUser() {
         String updateBody = """
                 {
@@ -100,7 +100,7 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 200 OK"));
     }
     
-    //@Test
+    @Test(priority = 3)
     public void testAddContact() {
         String contactBody = """
                 {
@@ -129,7 +129,7 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 201 Created"));
     }
     
-    @Test
+    @Test(priority = 4)
     public void testGetContactList() {
     	Response searchResponse = given()
                 .header("Authorization", "Bearer " + token)
@@ -141,11 +141,10 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 200 OK"))
                 .extract().response();
 
-    	contactId = searchResponse.jsonPath().getString("[0]._id");
-    	System.out.println("First Contact ID: " + contactId);
+    	contactId = searchResponse.jsonPath().getString("[0]._id");//store the search result
     }
     
-    @Test
+    @Test(priority = 5)
     public void testGetContactById() {
         given()
                 .header("Authorization", "Bearer " + token)
@@ -157,22 +156,23 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 200 OK"));
     }
     
-    @Test
+    @Test(priority = 6)
     public void testUpdateContact() {
+    	System.out.println("First Contact ID: " + contactId);
         String updateBody = """
                 {
-                    "firstName": "Amy",
-                    "lastName": "Miller",
-                    "birthdate": "1992-02-02",
-                    "email": "test_email125@fake.com",
-                    "phone": "8005554242",
-                    "street1": "13 School St.",
-                    "street2": "Apt. 5",
-                    "city": "Washington",
-                    "stateProvince": "QC",
-                    "postalCode": "A1A1A1",
-                    "country": "Canada"
-                }
+					"firstName": "Amy",
+					"lastName": "Miller",
+					"birthdate": "1992-02-02",
+					"email": "test_email125@fake.com",
+					"phone": "8005554242",
+					"street1": "13 School St.",
+					"street2": "Apt. 5",
+					"city": "Washington",
+					"stateProvince": "QC",
+					"postalCode": "A1A1A1",
+					"country": "Canada"
+				}
                 """;
 
         given()
@@ -187,7 +187,7 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 200 OK"));
     }
     
-    @Test
+    @Test(priority = 7)
     public void testPatchUpdateContact() {
         String patchBody = """
                 {
@@ -207,7 +207,7 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 200 OK"));
     }
     
-    @Test
+    @Test(priority = 8)
     public void testLogoutUser() {
         given()
                 .header("Authorization", "Bearer " + token)
