@@ -15,7 +15,7 @@ public class RestAPITesting {
 	 private String token;
 	 private String contactId;
 	 
-    //@Test --Uncomment to register a new user
+    //@Test --Uncomment to register a new user. The below user is already registered.
     public void testAddNewUser() {
         RestAssured.baseURI = "https://thinking-tester-contact-list.herokuapp.com";
 
