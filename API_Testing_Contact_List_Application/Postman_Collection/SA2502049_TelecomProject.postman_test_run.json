@@ -1,0 +1,392 @@
+{
+	"id": "313b106d-a4d8-496f-9dc3-9f2a290b50f9",
+	"name": "SA2502049_TelecomProject",
+	"timestamp": "2025-08-16T17:59:27.452Z",
+	"collection_id": "47645874-96248d76-6baf-4bd1-bc42-7554ba3d69ce",
+	"folder_id": 0,
+	"environment_id": "47645874-ea9ac1dd-c924-4e3b-949f-22c92525db3a",
+	"totalPass": 20,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-08-16T17:59:21.689Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "fc8949ee-331d-4608-8e69-86ac0a5f7051",
+			"name": "Add New User",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/users",
+			"time": 1547,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Check the status message 'Created'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message 'Created'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1547
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Check the status message 'Created'": true
+				}
+			]
+		},
+		{
+			"id": "e689fd43-0a5e-480b-8feb-ab3c7879635f",
+			"name": "Get user Profile",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/users/me",
+			"time": 289,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check the status message OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				289
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check the status message OK": true
+				}
+			]
+		},
+		{
+			"id": "f21ce076-c2c7-43ff-a20d-054a8d7c0575",
+			"name": "Update User",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/users/me",
+			"time": 313,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check the status message OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				313
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check the status message OK": true
+				}
+			]
+		},
+		{
+			"id": "a09a4700-b534-45a6-9f3d-98d6d662fff8",
+			"name": "Log In User",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/users/login",
+			"time": 314,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check the status message OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				314
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check the status message OK": true
+				}
+			]
+		},
+		{
+			"id": "14dea830-a76d-421e-a51b-fe7b0a824836",
+			"name": "Add Contact",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+			"time": 290,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Check the status message Created": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				290
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Check the status message Created": true
+				}
+			]
+		},
+		{
+			"id": "7d29ef82-7aeb-481b-8394-35113f8704de",
+			"name": "Get Contact List",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+			"time": 288,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check the status message OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				288
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check the status message OK": true
+				}
+			]
+		},
+		{
+			"id": "c1461158-9d59-4a39-961b-edcc902ffa84",
+			"name": "Get Contact",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/contacts/68a0c6fdf18f8300158047cb",
+			"time": 290,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check the status message OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				290
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check the status message OK": true
+				}
+			]
+		},
+		{
+			"id": "901648c7-f624-404e-8748-43b90d962fae",
+			"name": "Update Contact",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/contacts/68a0c6fdf18f8300158047cb",
+			"time": 300,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check the status message OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				300
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check the status message OK": true
+				}
+			]
+		},
+		{
+			"id": "b904b1b3-a8ac-41de-a072-98389975a2b4",
+			"name": "Update Partial Contact",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/contacts/68a0c6fdf18f8300158047cb",
+			"time": 289,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check the status message OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				289
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check the status message OK": true
+				}
+			]
+		},
+		{
+			"id": "952ad1f3-60fd-4c45-8e78-bcb3a2e4e3d8",
+			"name": "Logout User",
+			"url": "https://thinking-tester-contact-list.herokuapp.com/users/logout",
+			"time": 289,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check the status message OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the status message OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				289
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check the status message OK": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4209,
+	"collection": {
+		"requests": [
+			{
+				"id": "fc8949ee-331d-4608-8e69-86ac0a5f7051",
+				"method": "POST"
+			},
+			{
+				"id": "e689fd43-0a5e-480b-8feb-ab3c7879635f",
+				"method": "GET"
+			},
+			{
+				"id": "f21ce076-c2c7-43ff-a20d-054a8d7c0575",
+				"method": "PATCH"
+			},
+			{
+				"id": "a09a4700-b534-45a6-9f3d-98d6d662fff8",
+				"method": "POST"
+			},
+			{
+				"id": "14dea830-a76d-421e-a51b-fe7b0a824836",
+				"method": "POST"
+			},
+			{
+				"id": "7d29ef82-7aeb-481b-8394-35113f8704de",
+				"method": "GET"
+			},
+			{
+				"id": "c1461158-9d59-4a39-961b-edcc902ffa84",
+				"method": "GET"
+			},
+			{
+				"id": "901648c7-f624-404e-8748-43b90d962fae",
+				"method": "PUT"
+			},
+			{
+				"id": "b904b1b3-a8ac-41de-a072-98389975a2b4",
+				"method": "PATCH"
+			},
+			{
+				"id": "952ad1f3-60fd-4c45-8e78-bcb3a2e4e3d8",
+				"method": "POST"
+			}
+		]
+	}
+}

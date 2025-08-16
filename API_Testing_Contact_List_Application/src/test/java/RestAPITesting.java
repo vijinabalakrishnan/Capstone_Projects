@@ -11,23 +11,35 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
 public class RestAPITesting {
-	 private String token;
+	 private String userToken;
+	 private String loginToken;
+	 private String userEmail;
 	 private String contactId;
 	 
-    //@Test --Uncomment to register a new user. The below user is already registered.
+    
+	 
+    @Test(priority = 0)
     public void testAddNewUser() {
         RestAssured.baseURI = "https://thinking-tester-contact-list.herokuapp.com";
-
+        String currentTime = LocalTime.now().toString();
+        userEmail =  "qa"+currentTime.replaceAll(":","_")+"@vijinamail.com";
+        System.out.println(userEmail);
+        
         String requestBody = """
                 {
                    "firstName": "Test",
 					"lastName": "User123",
-					"email": "test_email125@fake.com",
+					"email": "{userEmail}",
 					"password": "myPassword"
                 }
                 """;
+        requestBody = requestBody.replace("{userEmail}", userEmail);
 
+        System.out.println(requestBody);
         Response response = given()
                 .contentType(ContentType.JSON)
                 .body(requestBody)
@@ -38,39 +50,18 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 201 Created"))
                 .extract().response();
         
-        String token = response.jsonPath().getString("token");
+        userToken = response.jsonPath().getString("token");
         
-        token.codePoints();
+
+        System.out.println(userToken);
     }
     
-    @BeforeClass
-    public void setupAndLogin() {
-        RestAssured.baseURI = "https://thinking-tester-contact-list.herokuapp.com";
-
-        // Login to get token (assumes user already exists)
-        String loginBody = """
-                {
-                    "email": "test_email125@fake.com",
-                    "password": "myPassword"
-                }
-                """;
-
-        Response loginResponse = given()
-                .contentType(ContentType.JSON)
-                .body(loginBody)
-        .when()
-                .post("/users/login")
-        .then()
-                .statusCode(200)
-                .extract().response();
-
-        token = loginResponse.jsonPath().getString("token");
-    }
+    
     
     @Test(priority = 1)
     public void testGetUserProfile() {
         given()
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + userToken)
         .when()
                 .get("/users/me")
         .then()
@@ -80,17 +71,22 @@ public class RestAPITesting {
     
     @Test(priority = 2)
     public void testUpdateUser() {
+    	String currentTime = LocalTime.now().toString();
+        userEmail =  "qa"+currentTime.replaceAll(":","_")+"@vijinamail.com";
+        System.out.println(userEmail);
+       
         String updateBody = """
                 {
                     "firstName": "Updated",
                     "lastName": "Username",
-                    "email": "test_email125@fake.com",
+                    "email": "{userEmail}",
 					"password": "myPassword"
                 }
                 """;
-
+        updateBody = updateBody.replace("{userEmail}", userEmail);
+        
         given()
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + userToken)
                 .contentType(ContentType.JSON)
                 .body(updateBody)
         .when()
@@ -101,13 +97,39 @@ public class RestAPITesting {
     }
     
     @Test(priority = 3)
+    public void Login() {
+    RestAssured.baseURI = "https://thinking-tester-contact-list.herokuapp.com";
+    
+    // Login to get token (assumes user already exists)
+    String loginBody = """
+            {
+                "email": "{userEmail}",
+                "password": "myPassword"
+            }
+            """;
+    loginBody = loginBody.replace("{userEmail}", userEmail);
+    
+    Response loginResponse = given()
+            .contentType(ContentType.JSON)
+            .body(loginBody)
+    .when()
+            .post("/users/login")
+    .then()
+            .statusCode(200)
+            .extract().response();
+
+    loginToken = loginResponse.jsonPath().getString("token");
+    System.out.println(loginToken);
+}
+    
+    @Test(priority = 4)
     public void testAddContact() {
         String contactBody = """
                 {
                     "firstName": "John",
                     "lastName": "Doe",
                     "birthdate": "1970-01-01",
-                    "email": "test_email125@fake.com",
+                    "email": "test_email125@vijinamail.com",
                     "phone": "8005555555",
                     "street1": "1 Main St.",
                     "street2": "Apartment A",
@@ -119,7 +141,7 @@ public class RestAPITesting {
                 """;
 
         given()
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + loginToken)
                 .contentType(ContentType.JSON)
                 .body(contactBody)
         .when()
@@ -129,10 +151,10 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 201 Created"));
     }
     
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void testGetContactList() {
     	Response searchResponse = given()
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + loginToken)
                 .contentType(ContentType.JSON)
         .when()
                 .get("/contacts")
@@ -144,10 +166,10 @@ public class RestAPITesting {
     	contactId = searchResponse.jsonPath().getString("[0]._id");//store the search result
     }
     
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void testGetContactById() {
         given()
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + loginToken)
                 .contentType(ContentType.JSON)
         .when()
                 .get("/contacts/" + contactId)
@@ -156,7 +178,7 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 200 OK"));
     }
     
-    @Test(priority = 6)
+    @Test(priority = 7)
     public void testUpdateContact() {
     	System.out.println("First Contact ID: " + contactId);
         String updateBody = """
@@ -164,7 +186,7 @@ public class RestAPITesting {
 					"firstName": "Amy",
 					"lastName": "Miller",
 					"birthdate": "1992-02-02",
-					"email": "test_email125@fake.com",
+					"email": "test_email125@vijinamail.com",
 					"phone": "8005554242",
 					"street1": "13 School St.",
 					"street2": "Apt. 5",
@@ -176,18 +198,18 @@ public class RestAPITesting {
                 """;
 
         given()
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + loginToken)
                 .contentType(ContentType.JSON)
                 .body(updateBody)
         .when()
                 .put("/contacts/" + contactId)
         .then()
                 .statusCode(200)
-                .body("email", equalTo("test_email125@fake.com"))
+                .body("email", equalTo("test_email125@vijinamail.com"))
                 .statusLine(equalTo("HTTP/1.1 200 OK"));
     }
     
-    @Test(priority = 7)
+    @Test(priority = 8)
     public void testPatchUpdateContact() {
         String patchBody = """
                 {
@@ -196,7 +218,7 @@ public class RestAPITesting {
                 """;
 
         given()
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + loginToken)
                 .contentType(ContentType.JSON)
                 .body(patchBody)
         .when()
@@ -207,10 +229,10 @@ public class RestAPITesting {
                 .statusLine(equalTo("HTTP/1.1 200 OK"));
     }
     
-    @Test(priority = 8)
+    @Test(priority = 9)
     public void testLogoutUser() {
         given()
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + loginToken)
                 .contentType(ContentType.JSON)
         .when()
                 .post("/users/logout")

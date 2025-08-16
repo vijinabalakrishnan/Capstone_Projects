@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T22:58:52 IST" name="Default suite" finished-at="2025-08-13T22:59:06 IST" duration-ms="14566">
+  <suite started-at="2025-08-16T23:31:15 IST" name="Default suite" finished-at="2025-08-16T23:31:33 IST" duration-ms="17946">
     <groups>
     </groups>
-    <test started-at="2025-08-13T22:58:52 IST" name="Default test" finished-at="2025-08-13T22:59:06 IST" duration-ms="14566">
+    <test started-at="2025-08-16T23:31:15 IST" name="Default test" finished-at="2025-08-16T23:31:33 IST" duration-ms="17946">
       <class name="test.java.RestAPITesting">
-        <test-method is-config="true" signature="setupAndLogin()[pri:0, instance:test.java.RestAPITesting@15de0b3c]" started-at="2025-08-13T22:58:52 IST" name="setupAndLogin" finished-at="2025-08-13T22:58:56 IST" duration-ms="3663" status="PASS">
+        <test-method signature="testAddNewUser()[pri:0, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:15 IST" name="testAddNewUser" finished-at="2025-08-16T23:31:19 IST" duration-ms="4129" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupAndLogin -->
-        <test-method signature="testGetUserProfile()[pri:1, instance:test.java.RestAPITesting@15de0b3c]" started-at="2025-08-13T22:58:56 IST" name="testGetUserProfile" finished-at="2025-08-13T22:58:57 IST" duration-ms="1397" status="PASS">
+        </test-method> <!-- testAddNewUser -->
+        <test-method signature="testGetUserProfile()[pri:1, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:19 IST" name="testGetUserProfile" finished-at="2025-08-16T23:31:21 IST" duration-ms="1483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUserProfile -->
-        <test-method signature="testUpdateUser()[pri:2, instance:test.java.RestAPITesting@15de0b3c]" started-at="2025-08-13T22:58:57 IST" name="testUpdateUser" finished-at="2025-08-13T22:58:58 IST" duration-ms="1358" status="PASS">
+        <test-method signature="testUpdateUser()[pri:2, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:21 IST" name="testUpdateUser" finished-at="2025-08-16T23:31:23 IST" duration-ms="1574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUser -->
-        <test-method signature="testAddContact()[pri:3, instance:test.java.RestAPITesting@15de0b3c]" started-at="2025-08-13T22:58:58 IST" name="testAddContact" finished-at="2025-08-13T22:59:00 IST" duration-ms="1303" status="PASS">
+        <test-method signature="Login()[pri:3, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:23 IST" name="Login" finished-at="2025-08-16T23:31:24 IST" duration-ms="1506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="testAddContact()[pri:4, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:24 IST" name="testAddContact" finished-at="2025-08-16T23:31:26 IST" duration-ms="1486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddContact -->
-        <test-method signature="testGetContactList()[pri:4, instance:test.java.RestAPITesting@15de0b3c]" started-at="2025-08-13T22:59:00 IST" name="testGetContactList" finished-at="2025-08-13T22:59:01 IST" duration-ms="1385" status="PASS">
+        <test-method signature="testGetContactList()[pri:5, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:26 IST" name="testGetContactList" finished-at="2025-08-16T23:31:27 IST" duration-ms="1509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetContactList -->
-        <test-method signature="testGetContactById()[pri:5, instance:test.java.RestAPITesting@15de0b3c]" started-at="2025-08-13T22:59:01 IST" name="testGetContactById" finished-at="2025-08-13T22:59:02 IST" duration-ms="1403" status="PASS">
+        <test-method signature="testGetContactById()[pri:6, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:27 IST" name="testGetContactById" finished-at="2025-08-16T23:31:29 IST" duration-ms="1657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetContactById -->
-        <test-method signature="testUpdateContact()[pri:6, instance:test.java.RestAPITesting@15de0b3c]" started-at="2025-08-13T22:59:02 IST" name="testUpdateContact" finished-at="2025-08-13T22:59:04 IST" duration-ms="1332" status="PASS">
+        <test-method signature="testUpdateContact()[pri:7, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:29 IST" name="testUpdateContact" finished-at="2025-08-16T23:31:30 IST" duration-ms="1521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateContact -->
-        <test-method signature="testPatchUpdateContact()[pri:7, instance:test.java.RestAPITesting@15de0b3c]" started-at="2025-08-13T22:59:04 IST" name="testPatchUpdateContact" finished-at="2025-08-13T22:59:05 IST" duration-ms="1348" status="PASS">
+        <test-method signature="testPatchUpdateContact()[pri:8, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:30 IST" name="testPatchUpdateContact" finished-at="2025-08-16T23:31:32 IST" duration-ms="1486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPatchUpdateContact -->
-        <test-method signature="testLogoutUser()[pri:8, instance:test.java.RestAPITesting@15de0b3c]" started-at="2025-08-13T22:59:05 IST" name="testLogoutUser" finished-at="2025-08-13T22:59:06 IST" duration-ms="1318" status="PASS">
+        <test-method signature="testLogoutUser()[pri:9, instance:test.java.RestAPITesting@5b7a5baa]" started-at="2025-08-16T23:31:32 IST" name="testLogoutUser" finished-at="2025-08-16T23:31:33 IST" duration-ms="1533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogoutUser -->

@@ -5,8 +5,7 @@
     <classes>
       <class name="test.java.RestAPITesting">
         <methods>
-          <include name="setupAndLogin"/>
-          <include name="testUpdateContact"/>
+          <include name="testAddNewUser"/>
         </methods>
       </class> <!-- test.java.RestAPITesting -->
     </classes>
